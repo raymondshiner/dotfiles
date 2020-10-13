@@ -55,6 +55,10 @@ alias hsr='homeshick refresh'
 alias hsc='homeshick check'
 alias hst='homeshick track'
 alias hcd='homeshick cd'
+alias updotfiles='homeshick cd dotfiles && git pull && git add . && git commit -m "update - `date +%D_%H:%M`" && git push && cd -'
+alias upkeys='homeshick cd keys && git pull && git add . && git commit -m "update - `date +%D_%H:%M`" && git push && cd -'
+alias upvscode='homeshick cd vscode && git pull && git add . && git commit -m "update - `date +%D_%H:%M`" && git push && cd -'
+
 
 #Navigation Aliases
 alias home="cd ~"
@@ -89,9 +93,6 @@ alias getp="yay -Sy"
 alias rmp="yay -R"
 alias rl="source ~/.zshrc"
 
-##Config files Alias
-alias configs='cd ~/git/config-files'
-alias upconfigs='cd ~/git/config-files && git pull && git add . && git commit -m "update config - `date +%D_%H:%M`" && git push && cd -'
 
 
 #postgress aliases
