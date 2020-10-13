@@ -7,7 +7,7 @@ ZSH_THEME="spaceship"
 # Plugins
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z)
+plugins=(git z ssh-agent gpg-agent)
 
 #homeshick stuff
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
