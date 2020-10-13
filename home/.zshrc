@@ -1,4 +1,3 @@
-
 # Path to your oh-my-zsh installation.
 export ZSH="/home/rshiner/.oh-my-zsh"
 
@@ -54,7 +53,7 @@ alias jarvis='cd ~/stc/git/react/jarvis-frontend/'
 alias hsp='homeshick pull'
 alias hsr='homeshick refresh'
 alias hsc='homeshick check'
-
+alias hst='homeshick track'
 alias hcd='homeshick cd'
 
 #Navigation Aliases
