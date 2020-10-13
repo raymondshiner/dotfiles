@@ -58,7 +58,6 @@ alias hst='homeshick track'
 alias hcd='homeshick cd'
 alias updotfiles='homeshick cd dotfiles && git pull && git add . && git commit -m "update - `date +%D_%H:%M`" && git push && cd -'
 alias upkeys='homeshick cd keys && git pull && git add . && git commit -m "update - `date +%D_%H:%M`" && git push && cd -'
-alias upvscode='homeshick cd vscode && git pull && git add . && git commit -m "update - `date +%D_%H:%M`" && git push && cd -'
 
 
 #Navigation Aliases
