@@ -80,6 +80,7 @@ alias cl="clear"
 alias open='xdg-open .'
 alias ctls='sudo systemctl start'
 alias grab-ssh-pub='xclip -selection clipboard < ~/.ssh/id_rsa.pub'
+alias grab-ssh-pubstc='xclip -selection clipboard < ~/.ssh/id_storagecraft.pub'
 
 #teamviewer aliases
 alias tvservice='echo "starting service" && sudo killall teamviewerd && sudo systemctl enable --now teamviewerd'
