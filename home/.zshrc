@@ -50,6 +50,7 @@ alias ws='cd ~/stc/git/java/frontend-service'
 alias jarvis='cd ~/stc/git/react/jarvis-frontend/'
 
 #Homeshick aliases
+alias hs='homeshick'
 alias hsp='homeshick pull'
 alias hsr='homeshick refresh'
 alias hsc='homeshick check'
