@@ -50,6 +50,13 @@ alias sd='cd ~/stc/git/react/phoenix-apollo-graph-api'
 alias ws='cd ~/stc/git/java/frontend-service'
 alias jarvis='cd ~/stc/git/react/jarvis-frontend/'
 
+#Homeshick aliases
+alias hsp='homeshick pull'
+alias hsr='homeshick refresh'
+alias hsc='homeshick check'
+
+alias hcd='homeshick cd'
+
 #Navigation Aliases
 alias home="cd ~"
 alias gits="cd ~/git"
