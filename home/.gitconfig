@@ -1,0 +1,8 @@
+[user]
+	email = raymondshiner@gmail.com
+	name = Raymond Shiner
+[pull]
+	rebase = false
+
+[includeIf "gitdir:~/stc/"]
+  path = ~/stc/.git_overrides_storagecraft
