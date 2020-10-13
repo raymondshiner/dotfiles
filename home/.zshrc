@@ -39,15 +39,8 @@ source /usr/share/nvm/init-nvm.sh
 
 
 #Flex Aliases
-alias kc='kubectl'
-alias web='cd ~/git/personal-website'
-alias wd='cd ~/stc/git/react/phoenix-frontend'
-alias we='cd ~/stc/git/react/phoenix-apollo-graph-api'
-alias wds='wd && ys'
-alias cb='cd ~/stc/git/react/cloud-backup'
-alias sd='cd ~/stc/git/react/phoenix-apollo-graph-api'
-alias ws='cd ~/stc/git/java/frontend-service'
-alias jarvis='cd ~/stc/git/react/jarvis-frontend/'
+alias wd='cd ~/stc/react/phoenix-frontend'
+alias we='cd ~/stc/react/phoenix-apollo-graph-api'
 
 #Homeshick aliases
 alias hs='homeshick'
@@ -59,6 +52,8 @@ alias hcd='homeshick cd'
 alias updotfiles='homeshick cd dotfiles && git pull && git add . && git commit -m "update - `date +%D_%H:%M`" && git push && cd -'
 alias upkeys='homeshick cd keys && git pull && git add . && git commit -m "update - `date +%D_%H:%M`" && git push && cd -'
 
+#k8s aliases
+alias kc='kubectl'
 
 #Navigation Aliases
 alias home="cd ~"
