@@ -51,6 +51,7 @@ alias we='cd ~/stc/react/phoenix-apollo-graph-api'
 alias hs='homeshick'
 alias updotfiles='homeshick cd dotfiles && git pull && git add . && git commit -m "update - `date +%D_%H:%M`" && git push && cd -'
 alias upkeys='homeshick cd keys && git pull && git add . && git commit -m "update - `date +%D_%H:%M`" && git push && cd -'
+alias upscripts='homeshick cd scripts && git pull && git add . && git commit -m "update - `date +%D_%H:%M`" && git push && cd -'
 
 #k8s aliases
 alias kc='kubectl'
