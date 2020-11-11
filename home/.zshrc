@@ -85,7 +85,6 @@ alias tvservice='echo "starting service" && sudo killall teamviewerd && sudo sys
 #system aliases
 alias updateall='yay -Syyu --noconfirm --useask'
 alias capsescape='setxkbmap -option caps:escape'
-alias resetcaps='setxkbmap -option caps:caps'
 alias profile="nvim ~/.zshrc"
 alias rmp="yay -R"
 alias rl="source ~/.zshrc"
