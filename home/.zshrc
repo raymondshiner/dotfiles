@@ -77,6 +77,7 @@ alias open='xdg-open .'
 alias ctls='sudo systemctl start'
 alias grab-ssh-pub='xclip -selection clipboard < ~/.ssh/id_rsa.pub'
 alias grab-ssh-pubstc='xclip -selection clipboard < ~/.ssh/id_storagecraft.pub'
+alias jmeter='/home/rshiner/.local/share/apache-jmeter-5.3/bin/jmeter'
 
 #teamviewer aliases
 alias tvservice='echo "starting service" && sudo killall teamviewerd && sudo systemctl enable --now teamviewerd'
@@ -135,3 +136,4 @@ alias dps='docker ps'
 alias email-microservice='docker run --rm -p 51044:80 email-microservice'
 alias drmi='docker rmi' 
 
+homeshick refresh --quiet
