@@ -19,22 +19,11 @@ fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
 #Sourcing oh-my-zsh.sh
 source $ZSH/oh-my-zsh.sh
 
-#source nvm
-source /usr/share/nvm/init-nvm.sh
-
-#source emplace
-eval "$(emplace init zsh)"
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/rshiner/.local/google-cloud-sdk/path.zsh.inc' ]; then . '/home/rshiner/.local/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/rshiner/.local/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/rshiner/.local/google-cloud-sdk/completion.zsh.inc'; fi
-
-#Tilix Instatiation
-if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-        source /etc/profile.d/vte.sh
-fi
 
 #####################################
 #####################################
@@ -68,8 +57,6 @@ alias wdo="nvim ~/todo/work.todo"
 
 #Functional Aliases
 alias vim="nvim"
-alias jt="jetbrains-toolbox"
-alias vpn="sudo pia -s 44"
 alias wvpn="nmcli con up id StorageCraft"
 alias wvpnd="nmcli con down id StorageCraft"
 alias cl="clear"
@@ -85,10 +72,11 @@ alias tvservice='echo "starting service" && sudo killall teamviewerd && sudo sys
 
 
 #system aliases
-alias updateall='yay -Syyu --noconfirm --useask'
+alias updateall='sudo apt update && sudo apt -y full-upgrade'
 alias capsescape='setxkbmap -option caps:escape'
 alias profile="nvim ~/.zshrc"
-alias rmp="yay -R"
+alias getp='sudo apt install'
+alias rmp='sudo apt remove'
 alias rl="source ~/.zshrc"
 
 
