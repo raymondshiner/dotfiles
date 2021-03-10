@@ -1,11 +1,14 @@
-# Manually append ~/bin to path.
-export PATH=~/bin:$PATH
+# Manually append ~/.local/bin to path.
+export PATH=~/.local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/rshiner/.oh-my-zsh"
 
 #ZSH Theme
 ZSH_THEME="spaceship"
+
+#Spaceship prompt modification
+SPACESHIP_GCLOUD_SHOW=false
 
 # Plugins
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -18,6 +21,11 @@ fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
 
 #Sourcing oh-my-zsh.sh
 source $ZSH/oh-my-zsh.sh
+
+#sourcing nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/rshiner/.local/google-cloud-sdk/path.zsh.inc' ]; then . '/home/rshiner/.local/google-cloud-sdk/path.zsh.inc'; fi
@@ -126,3 +134,4 @@ alias email-microservice='docker run --rm -p 51044:80 email-microservice'
 alias drmi='docker rmi' 
 
 homeshick refresh --quiet
+
