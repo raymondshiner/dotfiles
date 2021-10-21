@@ -75,13 +75,8 @@ alias grab-ssh-pubstc='xclip -selection clipboard < ~/.ssh/id_storagecraft.pub'
 alias jmeter='/home/rshiner/.local/share/apache-jmeter-5.3/bin/jmeter'
 alias lig='lorem-ipsum-generator -l -s 10 | xclip -selection clipboard'
 
-#vs code alias
-# old alias - alias code='GTK_IM_MODULE="xim" code'
-alias code='code-insiders'
-
 #teamviewer aliases
 alias tvservice='echo "starting service" && sudo killall teamviewerd && sudo systemctl enable --now teamviewerd'
-
 
 #system aliases
 alias updateall='sudo apt update && sudo apt -y full-upgrade'
@@ -90,12 +85,6 @@ alias profile="nvim ~/.zshrc"
 alias getp='sudo apt install'
 alias rmp='sudo apt remove'
 alias rl="source ~/.zshrc"
-
-
-
-#postgress aliases
-alias pgu='sudo -iu postgres'
-alias pgstart='sudo systemctl enable postgresql.service --now'
 
 #JavaScript development aliases
 alias cyp='yarn cypress open'
@@ -108,12 +97,6 @@ alias cra='npx create-react-app'
 
 alias frontend='export CWD_X=$(pwd); cd ~/stc/git/react/phoenix-frontend && pm2 start && cd ~/stc/git/react/phoenix-apollo-graph-api && pm2 start && cd $CWD_X'
 
-#pm2 aliases
-alias pm2k='pm2 delete all' 
-alias pm2m='pm2 monit'
-alias pm2d='pm2 delete'
-alias pm2s='pm2 start'
-
 #git aliases
 alias gaa="git add ."
 alias gcm="git commit -m "
@@ -123,9 +106,7 @@ alias gbr="git checkout -b"
 alias gdl="git branch -d"
 
 #ls aliases
-alias ll='ls -l'
-alias la='ls -A'
-alias lla='ls -la'
+alias ll='ls -al'
 alias l='ls -CF'
 alias loc='cd ~/.local'
 
