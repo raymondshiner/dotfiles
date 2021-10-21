@@ -3,3 +3,8 @@
 	name = Raymond Shiner
 [pull]
 	rebase = false
+[credential]
+	helper = store
+
+[includeif "gitdir:~/evolve/"]
+	path = ~/evolve/.git_overrides_evolve
