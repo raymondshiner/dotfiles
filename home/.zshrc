@@ -41,8 +41,7 @@ if [ -f '/home/rshiner/.local/google-cloud-sdk/completion.zsh.inc' ]; then . '/h
 
 
 #Flex Aliases
-alias wd='cd ~/stc/react/phoenix-frontend'
-alias we='cd ~/stc/react/phoenix-apollo-graph-api'
+alias wd='cd ~/evolve/evolvemep-foresite-container-ui'
 
 #Homeshick aliases
 alias hs='homeshick'
