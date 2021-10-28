@@ -41,7 +41,7 @@ if [ -f '/home/rshiner/.local/google-cloud-sdk/completion.zsh.inc' ]; then . '/h
 
 
 #Flex Aliases
-alias wd='cd ~/evolve/evolvemep-foresite-container-ui'
+alias wd='cd ~/evolve/container-ui && nvm use'
 
 #Homeshick aliases
 alias hs='homeshick'
@@ -93,11 +93,13 @@ alias yt='yarn test'
 alias yr='yarn remove'
 alias ya='yarn add'
 alias cra='npx create-react-app'
+alias crat='npx create-react-app --template typescript'
 
 alias frontend='export CWD_X=$(pwd); cd ~/stc/git/react/phoenix-frontend && pm2 start && cd ~/stc/git/react/phoenix-apollo-graph-api && pm2 start && cd $CWD_X'
 
 #git aliases
 alias gaa="git add ."
+alias gs='git status'
 alias gcm="git commit -m "
 alias gcl="git clone"
 alias gch="git checkout"
