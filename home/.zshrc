@@ -74,6 +74,10 @@ alias grab-ssh-pubstc='xclip -selection clipboard < ~/.ssh/id_storagecraft.pub'
 alias jmeter='/home/rshiner/.local/share/apache-jmeter-5.3/bin/jmeter'
 alias lig='lorem-ipsum-generator -l -s 10 | xclip -selection clipboard'
 
+#expressvpn aliases
+alias vpn='expressvpn connect'
+alias vpnd='expressvpn disconnect'
+
 #teamviewer aliases
 alias tvservice='echo "starting service" && sudo killall teamviewerd && sudo systemctl enable --now teamviewerd'
 
