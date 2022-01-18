@@ -64,8 +64,6 @@ alias wdo="nvim ~/todo/work.todo"
 
 #Functional Aliases
 alias vim="nvim"
-alias wvpn="nmcli con up id StorageCraft"
-alias wvpnd="nmcli con down id StorageCraft"
 alias cl="clear"
 alias open='xdg-open .'
 alias ctls='sudo systemctl start'
@@ -73,6 +71,10 @@ alias grab-ssh-pub='xclip -selection clipboard < ~/.ssh/id_rsa.pub'
 alias grab-ssh-pubstc='xclip -selection clipboard < ~/.ssh/id_storagecraft.pub'
 alias jmeter='/home/rshiner/.local/share/apache-jmeter-5.3/bin/jmeter'
 alias lig='lorem-ipsum-generator -l -s 10 | xclip -selection clipboard'
+
+#ssh commands
+alias montressorAdmin='ssh rshiner@10.0.0.10'
+alias montressorMc='ssh minecraft@10.0.0.10'
 
 #expressvpn aliases
 alias vpn='nmcli con up id ExpressVPN_Seattle'
