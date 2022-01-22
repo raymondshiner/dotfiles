@@ -73,8 +73,8 @@ alias jmeter='/home/rshiner/.local/share/apache-jmeter-5.3/bin/jmeter'
 alias lig='lorem-ipsum-generator -l -s 10 | xclip -selection clipboard'
 
 #ssh commands
-alias montressorAdmin='ssh rshiner@10.0.0.10'
-alias montressorMc='ssh minecraft@10.0.0.10'
+alias montressorAdmin='ssh rhawkins244@192.168.1.2 -p 19422'
+alias montressorMc='ssh mcManagement799@192.168.1.2 -p 19422'
 
 #expressvpn aliases
 alias vpn='nmcli con up id ExpressVPN_Seattle'
