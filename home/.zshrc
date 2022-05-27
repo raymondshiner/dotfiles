@@ -98,8 +98,7 @@ alias yr='yarn remove'
 alias ya='yarn add'
 alias cra='npx create-react-app'
 alias crat='npx create-react-app --template typescript'
-
-alias frontend='export CWD_X=$(pwd); cd ~/stc/git/react/phoenix-frontend && pm2 start && cd ~/stc/git/react/phoenix-apollo-graph-api && pm2 start && cd $CWD_X'
+alias testui='nx test geodeip-ui --watch'
 
 #git aliases
 alias gaa="git add ."
