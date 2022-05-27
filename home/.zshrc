@@ -98,7 +98,10 @@ alias yr='yarn remove'
 alias ya='yarn add'
 alias cra='npx create-react-app'
 alias crat='npx create-react-app --template typescript'
+
+#GeodeIp Development Aliases
 alias testui='nx test geodeip-ui --watch'
+alias testapp='nx test geodeip --watch'
 
 #git aliases
 alias gaa="git add ."
