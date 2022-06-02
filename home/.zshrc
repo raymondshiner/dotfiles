@@ -78,9 +78,6 @@ alias montressorMc='ssh mcManagement799@192.168.1.2 -p 19422'
 alias vpn='nmcli con up id ExpressVPN_Seattle'
 alias vpnd='nmcli con down id ExpressVPN_Seattle'
 
-#teamviewer aliases
-alias tvservice='echo "starting service" && sudo killall teamviewerd && sudo systemctl enable --now teamviewerd'
-
 #system aliases
 alias updateall='sudo apt update && sudo apt -y full-upgrade'
 alias capsescape='setxkbmap -option caps:escape'
