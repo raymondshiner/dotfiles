@@ -70,10 +70,6 @@ alias grab-ssh-pubstc='xclip -selection clipboard < ~/.ssh/id_storagecraft.pub'
 alias jmeter='/home/rshiner/.local/share/apache-jmeter-5.3/bin/jmeter'
 alias lig='lorem-ipsum-generator -l -s 10 | xclip -selection clipboard'
 
-#ssh commands
-alias montressorAdmin='ssh rhawkins244@192.168.1.2 -p 19422'
-alias montressorMc='ssh mcManagement799@192.168.1.2 -p 19422'
-
 #expressvpn aliases
 alias vpn='nmcli con up id ExpressVPN_Seattle'
 alias vpnd='nmcli con down id ExpressVPN_Seattle'
@@ -107,7 +103,9 @@ alias testui='nx test geodeip-ui --watch'
 alias testutils='nx test goedeip-tests --watch'
 alias sbui='nx run geodeip-ui:storybook'
 alias sbapp='nx run geodeip:storybook'
+alias sbdocket='nx run geodeip-docket:storybook'
 alias codegen='yarn generate:geodeip'
+alias cytest='nx e2e geodeip-e2e --watch'
 
 #git aliases
 alias gaa="git add ."
