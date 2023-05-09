@@ -8,3 +8,7 @@
 
 [includeif "gitdir:~/evolve/"]
 	path = ~/evolve/.git_overrides_evolve
+[pack]
+	windowMemory = 100m
+	packSizeLimit = 100m
+	threads = 1

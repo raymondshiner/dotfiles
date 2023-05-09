@@ -27,11 +27,19 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+#sourcing rbenv
+eval "$(rbenv init - zsh)"
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/rshiner/.local/google-cloud-sdk/path.zsh.inc' ]; then . '/home/rshiner/.local/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/rshiner/.local/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/rshiner/.local/google-cloud-sdk/completion.zsh.inc'; fi
+
+for conf in "$HOME/.config/zsh/"*.zsh; do
+  source "${conf}"
+done
+unset conf
 
 #####################################
 #####################################
@@ -39,9 +47,12 @@ if [ -f '/home/rshiner/.local/google-cloud-sdk/completion.zsh.inc' ]; then . '/h
 #####################################
 #####################################
 
+#DMG Aliases
+alias edithosts='sudo nvim /etc/hosts'
 
 #Flex Aliases
-alias wd='cd ~/evolve/container-ui && nvm use'
+alias testdb='cd ~/geode/geodeip && bin/rails s -e test'
+alias e2e='cd ~/geode/geodeip/frontend && nvm use && yarn test:e2e:watch'
 
 #Homeshick aliases
 alias hs='homeshick'
@@ -131,3 +142,5 @@ alias drmi='docker rmi'
 
 homeshick refresh --quiet
 
+# Set PATH, MANPATH, etc., for Homebrew.
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
