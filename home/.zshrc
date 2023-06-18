@@ -137,10 +137,11 @@ alias loc='cd ~/.local'
 alias dstart='sudo systemctl start docker.service'
 alias dimage='docker image list'
 alias dps='docker ps'
-alias email-microservice='docker run --rm -p 51044:80 email-microservice'
 alias drmi='docker rmi' 
 
 homeshick refresh --quiet
 
 # Set PATH, MANPATH, etc., for Homebrew.
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
