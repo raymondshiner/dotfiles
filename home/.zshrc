@@ -1,8 +1,7 @@
 # Manually append ~/.local/bin to path.
 export PATH=~/.local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
-export ZSH="/home/rshiner/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 #ZSH Theme
 ZSH_THEME="spaceship"
@@ -134,3 +133,4 @@ alias drmi='docker rmi'
 homeshick refresh --quiet
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
