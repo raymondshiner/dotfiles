@@ -57,7 +57,6 @@ alias pdo="nvim ~/todo/personal.todo"
 alias wdo="nvim ~/todo/work.todo"
 
 #Functional Aliases
-alias vim="nvim"
 alias cl="clear"
 alias open='xdg-open .'
 alias ctls='sudo systemctl start'
