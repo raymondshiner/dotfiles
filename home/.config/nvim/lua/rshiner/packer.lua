@@ -13,8 +13,12 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
-    use('safv12/andromeda.vim', { as = 'andromeda' })
+    -- Themes
     use('ful1e5/onedark.nvim', { as = 'onedark' })
+    use {
+        "nobbmaestro/nvim-andromeda",
+        requires = { "tjdevries/colorbuddy.nvim", branch = "dev" }
+    }
 
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('nvim-treesitter/playground')

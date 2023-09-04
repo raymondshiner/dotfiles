@@ -79,15 +79,15 @@ _G.packer_plugins = {
     path = "/home/rshiner/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["andromeda.vim"] = {
-    loaded = true,
-    path = "/home/rshiner/.local/share/nvim/site/pack/packer/start/andromeda.vim",
-    url = "https://github.com/safv12/andromeda.vim"
-  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/rshiner/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["colorbuddy.nvim"] = {
+    loaded = true,
+    path = "/home/rshiner/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
+    url = "https://github.com/tjdevries/colorbuddy.nvim"
   },
   harpoon = {
     loaded = true,
@@ -113,6 +113,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/rshiner/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["nvim-andromeda"] = {
+    loaded = true,
+    path = "/home/rshiner/.local/share/nvim/site/pack/packer/start/nvim-andromeda",
+    url = "https://github.com/nobbmaestro/nvim-andromeda"
   },
   ["nvim-cmp"] = {
     loaded = true,
