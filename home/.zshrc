@@ -125,6 +125,8 @@ alias dstart='sudo systemctl start docker.service'
 alias dimage='docker image list'
 alias dps='docker ps'
 alias drmi='docker rmi' 
+alias sw_kb_qwerty="setxkbmap -model pc105 -layout us"
+alias sw_kb_colemak="setkb \"4ca\" && setkb -m pc105awide -o 'misc:cmk_curl_dh'"
 
 homeshick refresh --quiet
 
