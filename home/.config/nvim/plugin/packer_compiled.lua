@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/rshiner/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
     url = "https://github.com/tjdevries/colorbuddy.nvim"
   },
+  fd = {
+    loaded = true,
+    path = "/home/rshiner/.local/share/nvim/site/pack/packer/start/fd",
+    url = "https://github.com/sharkdp/fd"
+  },
   harpoon = {
     loaded = true,
     path = "/home/rshiner/.local/share/nvim/site/pack/packer/start/harpoon",
