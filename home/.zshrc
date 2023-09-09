@@ -74,11 +74,11 @@ alias vpnd='nmcli con down id ExpressVPN_Seattle'
 alias updateall='sudo apt update && sudo apt -y full-upgrade'
 alias capsescape='setxkbmap -option caps:escape'
 alias profile="nvim ~/.zshrc"
-alias nvc="cd ~/.config/nvim"
 alias clear-nvcache="rm -rf ~/.local/share/nvim"
 alias getp='sudo apt install'
 alias rmp='sudo apt remove'
 alias rl="source ~/.zshrc"
+alias nvc="nvim ~/.config/nvim"
 
 #JavaScript development aliases
 alias cyp='yarn cypress open'
