@@ -90,20 +90,9 @@ alias ya='yarn add'
 alias cra='npx create-react-app'
 alias crat='npx create-react-app --template typescript'
 
-#GeodeIp Development Aliases
-alias testall='nx run-many --target=test --all'
-alias testapp='nx test geodeip --watch'
-alias testauth='nx test geodeip-authentication --watch'
-alias testdocket='nx test geodeip-docket --watch'
-alias testgraphql='nx test geodeip-graphql --watch'
-alias testpatents='nx test geodeip-patents --watch'
-alias testui='nx test geodeip-ui --watch'
-alias testutils='nx test goedeip-tests --watch'
-alias sbui='nx run geodeip-ui:storybook'
-alias sbapp='nx run geodeip:storybook'
-alias sbdocket='nx run geodeip-docket:storybook'
-alias codegen='yarn generate:geodeip'
-alias cytest='nx e2e geodeip-e2e --watch'
+#DMG Development Aliases
+alias dmg-vpn="openvpn3 session-start --config ~/.vpn/dmg-autologin.ovpn"
+alias dmg-vpnd="openvpn3 session-manage --config ~/.vpn/dmg-autologin.ovpn --disconnect"
 
 #git aliases
 alias gaa="git add ."
