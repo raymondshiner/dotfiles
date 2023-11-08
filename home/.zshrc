@@ -72,6 +72,7 @@ alias vpnd='nmcli con down id ExpressVPN_Seattle'
 
 #system aliases
 alias updateall='sudo apt update && sudo apt -y full-upgrade'
+alias logirestart="sudo systemctl restart logid"
 alias capsescape='setxkbmap -option caps:escape'
 alias profile="nvim ~/.zshrc"
 alias clear-nvcache="rm -rf ~/.local/share/nvim"
@@ -89,10 +90,12 @@ alias yr='yarn remove'
 alias ya='yarn add'
 alias cra='npx create-react-app'
 alias crat='npx create-react-app --template typescript'
+alias nodeLegacy='export NODE_OPTIONS=--openssl-legacy-provider'
 
 #DMG Development Aliases
 alias dmg-vpn="openvpn3 session-start --config ~/.vpn/dmg-autologin.ovpn"
 alias dmg-vpnd="openvpn3 session-manage --config ~/.vpn/dmg-autologin.ovpn --disconnect"
+alias dmg-vpns="openvpn3 sessions-list"
 
 #git aliases
 alias gaa="git add ."
@@ -110,7 +113,7 @@ alias loc='cd ~/.local'
 
 
 #docker aliases
-alias dstart='sudo systemctl start docker.service'
+alias dstart='sudo systemctl start docker.service && rm ~/.docker/config.json && docker login -u "rshiner"'
 alias dimage='docker image list'
 alias dps='docker ps'
 alias drmi='docker rmi' 
