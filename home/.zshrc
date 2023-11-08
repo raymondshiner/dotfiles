@@ -72,7 +72,8 @@ alias vpnd='nmcli con down id ExpressVPN_Seattle'
 
 #system aliases
 alias updateall='sudo apt update && sudo apt -y full-upgrade'
-alias logirestart="sudo systemctl restart logid"
+alias logid-config="sudo nvim /etc/logid.cfg"
+alias logid-restart="sudo systemctl restart logid"
 alias capsescape='setxkbmap -option caps:escape'
 alias profile="nvim ~/.zshrc"
 alias clear-nvcache="rm -rf ~/.local/share/nvim"
