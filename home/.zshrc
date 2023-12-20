@@ -97,6 +97,7 @@ alias nodeLegacy='export NODE_OPTIONS=--openssl-legacy-provider'
 alias dmg-vpn="openvpn3 session-start --config ~/.vpn/dmg-autologin.ovpn"
 alias dmg-vpnd="openvpn3 session-manage --config ~/.vpn/dmg-autologin.ovpn --disconnect"
 alias dmg-vpns="openvpn3 sessions-list"
+alias aws-login-dmg="aws sso login --profile dmgpro-lower-environments"
 
 #git aliases
 alias gaa="git add ."
