@@ -81,6 +81,7 @@ alias getp='sudo apt install'
 alias rmp='sudo apt remove'
 alias rl="source ~/.zshrc"
 alias nvc="nvim ~/.config/nvim"
+alias stop-unifi='sudo service unifi stop'
 
 #JavaScript development aliases
 alias cyp='yarn cypress open'
