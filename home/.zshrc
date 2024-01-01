@@ -126,7 +126,7 @@ alias sw_kb_colemak='setkb -m pc105awide -o "misc:cmk_curl_dh" && setkb "4ca" &&
 
 
 #other aliases
-alias montressor='ssh rhawkins244@10.24.24.7'
+alias montressor='ssh -p 19422 rhawkins244@10.24.24.7'
 
 ########### End of Aliases ###############
 
