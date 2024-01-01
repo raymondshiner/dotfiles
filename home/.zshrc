@@ -124,6 +124,13 @@ alias capsescape_x='xmodmap -e "keycode 66 = Escape"'
 alias sw_kb_qwerty="setkb 4n && setxkbmap -layout us && capsescape_x"
 alias sw_kb_colemak='setkb -m pc105awide -o "misc:cmk_curl_dh" && setkb "4ca" && capsescape_x'
 
+
+#other aliases
+alias montressor='ssh rhawkins244@10.24.24.7'
+
+########### End of Aliases ###############
+
+
 homeshick refresh --quiet
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
