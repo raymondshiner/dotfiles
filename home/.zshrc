@@ -32,13 +32,6 @@ export NVM_DIR="$HOME/.nvm"
 #####################################
 #####################################
 
-#DMG Aliases
-alias edithosts='sudo nvim /etc/hosts'
-
-#Flex Aliases
-alias testdb='cd ~/geode/geodeip && bin/rails s -e test'
-alias e2e='cd ~/geode/geodeip/frontend && nvm use && yarn test:e2e:watch'
-
 #Homeshick aliases
 alias hs='homeshick'
 alias updotfiles='homeshick cd dotfiles && git pull && git add . && git commit -m "update - `date +%D_%H:%M`" && git push && cd -'
@@ -46,59 +39,30 @@ alias updotfiles='homeshick cd dotfiles && git pull && git add . && git commit -
 #k8s aliases
 alias kc='kubectl'
 
-#Navigation Aliases
-alias home="cd ~"
-alias gits="cd ~/git"
-alias dl="cd ~/Downloads"
-alias stc="cd ~/stc"
-alias rp="cd ~/git/react-playground"
-alias todo="cd ~/todo"
-alias pdo="nvim ~/todo/personal.todo"
-alias wdo="nvim ~/todo/work.todo"
-
 #Functional Aliases
 alias vim="nvim"
 alias cl="clear"
 alias open='xdg-open .'
-alias ctls='sudo systemctl start'
 alias grab-ssh-pub='xclip -selection clipboard < ~/.ssh/id_rsa.pub'
-alias grab-ssh-pubstc='xclip -selection clipboard < ~/.ssh/id_storagecraft.pub'
 alias jmeter='/home/rshiner/.local/share/apache-jmeter-5.3/bin/jmeter'
 alias lig='lorem-ipsum-generator -l -s 10 | xclip -selection clipboard'
 
-#expressvpn aliases
-alias vpn='nmcli con up id ExpressVPN_Seattle'
-alias vpnd='nmcli con down id ExpressVPN_Seattle'
-
 #system aliases
 alias updateall='sudo apt update && sudo apt -y full-upgrade'
-alias mouse-config="sudo nvim /etc/logid.cfg"
-alias mouse-restart="sudo systemctl restart logid"
-alias capsescape='setxkbmap -option caps:escape'
 alias profile="nvim ~/.zshrc"
 alias clear-nvcache="rm -rf ~/.local/share/nvim"
 alias getp='sudo apt install'
 alias rmp='sudo apt remove'
 alias rl="source ~/.zshrc"
 alias nvc="nvim ~/.config/nvim"
-alias stop-unifi='sudo service unifi stop'
 
 #JavaScript development aliases
-alias cyp='yarn cypress open'
 alias ys='yarn start'
 alias yi='yarn'
 alias yt='yarn test'
 alias yr='yarn remove'
 alias ya='yarn add'
-alias cra='npx create-react-app'
-alias crat='npx create-react-app --template typescript'
 alias nodeLegacy='export NODE_OPTIONS=--openssl-legacy-provider'
-
-#DMG Development Aliases
-alias dmg-vpn="openvpn3 session-start --config ~/.vpn/dmg-autologin.ovpn"
-alias dmg-vpnd="openvpn3 session-manage --config ~/.vpn/dmg-autologin.ovpn --disconnect"
-alias dmg-vpns="openvpn3 sessions-list"
-alias aws-login-dmg="aws sso login --profile dmgpro-lower-environments"
 
 #git aliases
 alias gaa="git add ."
@@ -112,18 +76,10 @@ alias gdl="git branch -d"
 #ls aliases
 alias ll='ls -al'
 alias l='ls -CF'
-alias loc='cd ~/.local'
-
 
 #docker aliases
 alias dstart='sudo systemctl start docker.service && rm ~/.docker/config.json && docker login -u "rshiner"'
-alias dimage='docker image list'
-alias dps='docker ps'
 alias drmi='docker rmi' 
-alias capsescape_x='xmodmap -e "keycode 66 = Escape"'
-alias sw_kb_qwerty="setkb 4n && setxkbmap -layout us && capsescape_x"
-alias sw_kb_colemak='setkb -m pc105awide -o "misc:cmk_curl_dh" && setkb "4ca" && capsescape_x'
-
 
 #other aliases
 alias montressor='ssh -p 19422 rhawkins244@10.24.24.7'
