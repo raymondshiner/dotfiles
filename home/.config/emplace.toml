@@ -1,7 +1,0 @@
-repo_directory = "/home/rshiner/.local/share/emplace"
-symlink = []
-
-[repo]
-branch = "master"
-file = ".emplace"
-url = "git@github.com:raymondshiner/emplace.git"
