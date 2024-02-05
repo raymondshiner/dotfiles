@@ -63,6 +63,8 @@ alias yt='yarn test'
 alias yr='yarn remove'
 alias ya='yarn add'
 alias nodeLegacy='export NODE_OPTIONS=--openssl-legacy-provider'
+alias npmb='npm run build'
+alias npmp='npm run preview'
 
 #git aliases
 alias gaa="git add ."
