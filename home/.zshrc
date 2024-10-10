@@ -84,7 +84,7 @@ alias dstart='sudo systemctl start docker.service && rm ~/.docker/config.json &&
 alias drmi='docker rmi' 
 
 #other aliases
-alias montressor='ssh -p 19422 rhawkins244@10.24.24.7'
+alias montressor='ssh -p 19422 rhawkins244@192.168.86.94'
 
 ########### End of Aliases ###############
 
