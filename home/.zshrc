@@ -58,7 +58,7 @@ alias nvc="nvim ~/.config/nvim"
 
 #JavaScript development aliases
 alias ys='yarn start'
-alais yd='yarn dev'
+alias yd='yarn dev'
 alias yi='yarn'
 alias yt='yarn test'
 alias yr='yarn remove'
