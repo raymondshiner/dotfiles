@@ -51,8 +51,8 @@ alias lig='lorem-ipsum-generator -l -s 10 | xclip -selection clipboard'
 alias updateall='sudo apt update && sudo apt -y full-upgrade'
 alias profile="nvim ~/.zshrc"
 alias clear-nvcache="rm -rf ~/.local/share/nvim"
-alias getp='sudo apt install'
-alias rmp='sudo apt remove'
+alias getp='sudo pacman -S'
+alias rmp='sudo pacman remove'
 alias rl="source ~/.zshrc"
 alias nvc="nvim ~/.config/nvim"
 
