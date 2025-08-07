@@ -1,3 +1,5 @@
+ print("✅ WSL config loaded")
+
 local wezterm = require 'wezterm'
 
 return {
