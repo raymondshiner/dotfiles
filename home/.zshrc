@@ -48,11 +48,11 @@ alias jmeter='/home/rshiner/.local/share/apache-jmeter-5.3/bin/jmeter'
 alias lig='lorem-ipsum-generator -l -s 10 | xclip -selection clipboard'
 
 #system aliases
-alias updateall='sudo apt update && sudo apt -y full-upgrade'
+alias updateall='yay -Syu'
 alias profile="nvim ~/.zshrc"
 alias clear-nvcache="rm -rf ~/.local/share/nvim"
-alias getp='sudo pacman -S'
-alias rmp='sudo pacman remove'
+alias getp='sudo yay -S'
+alias rmp='sudo yay -Rns'
 alias rl="source ~/.zshrc"
 alias nvc="nvim ~/.config/nvim"
 
