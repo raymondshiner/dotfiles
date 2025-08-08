@@ -17,7 +17,7 @@ plugins=(git z ssh-agent gpg-agent)
 source $ZSH/oh-my-zsh.sh
 
 # ----------------------------------------
-# HOMESHICK CONFIG
+# Homeshick 
 # ----------------------------------------
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
@@ -27,27 +27,34 @@ alias updotfiles='homeshick cd dotfiles && git pull && git add . && git commit -
 homeshick refresh --quiet
 
 # ----------------------------------------
-# NODE / NVM
+# Tools
 # ----------------------------------------
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-# ----------------------------------------
-# TOOL INSTALL / DEFINITIONS
-# ----------------------------------------
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+# Cursor CLI
+export PATH="$HOME/.local/bin:$PATH"
+
+#Turso
 export PATH="$HOME/.turso:$PATH"
 
 # Google Cloud SDK
 [ -f "$HOME/Downloads/google-cloud-sdk/path.zsh.inc" ] && source "$HOME/Downloads/google-cloud-sdk/path.zsh.inc"
 [ -f "$HOME/Downloads/google-cloud-sdk/completion.zsh.inc" ] && source "$HOME/Downloads/google-cloud-sdk/completion.zsh.inc"
 
-# Bun completions
+# ----------------------------------------
+# Package Managers
+# ----------------------------------------
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+#Bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
 [ -s "$BUN_INSTALL/_bun" ] && source "$BUN_INSTALL/_bun"
 
+#Yarn
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # pnpm
 export PNPM_HOME="/home/sirlexicon/.local/share/pnpm"
@@ -55,16 +62,16 @@ case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
-# pnpm end
+
 
 # ----------------------------------------
-# EDITOR SETTINGS
+# Editor Settings
 # ----------------------------------------
 export EDITOR=nvim
 export VISUAL=nvim
 
 # ----------------------------------------
-# FUNCTIONAL ALIASES
+# Functional Aliases
 # ----------------------------------------
 
 # General
@@ -126,13 +133,9 @@ alias ta='tmux attach-session -t'
 alias tl='tmux list-sessions'
 
 # ----------------------------------------
-# HOTKEY BINDS (Optional: Uncomment to use)
+# Hotkey Binds
 # ----------------------------------------
 bindkey -s '^o' 'nvim\n'      # Ctrl+O opens Neovim
 bindkey -s '^t' 'tmux\n'      # Ctrl+T opens tmux
 
-# ----------------------------------------
-# END OF FILE
-# ----------------------------------------
-
-
+############## END OF FILE ###############
