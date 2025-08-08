@@ -34,7 +34,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # ----------------------------------------
-# BUN / YARN / TURSO / GCLOUD
+# TOOL INSTALL / DEFINITIONS
 # ----------------------------------------
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
@@ -47,6 +47,15 @@ export PATH="$HOME/.turso:$PATH"
 
 # Bun completions
 [ -s "$BUN_INSTALL/_bun" ] && source "$BUN_INSTALL/_bun"
+
+
+# pnpm
+export PNPM_HOME="/home/sirlexicon/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
 
 # ----------------------------------------
 # EDITOR SETTINGS
@@ -125,4 +134,5 @@ bindkey -s '^t' 'tmux\n'      # Ctrl+T opens tmux
 # ----------------------------------------
 # END OF FILE
 # ----------------------------------------
+
 
